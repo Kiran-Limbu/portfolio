@@ -9,9 +9,8 @@ const MediaPanel = () => {
         <div className="background"></div>
         <div className="logo">Media</div>
 
-        {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/kiran-limbu-32692135a/"
           target="_blank"
           rel="noopener noreferrer"
           className="box box1"
@@ -21,9 +20,8 @@ const MediaPanel = () => {
           </span>
         </a>
 
-        {/* Facebook */}
         <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/profile.php?id=61579257536313"
           target="_blank"
           rel="noopener noreferrer"
           className="box box2"
@@ -33,9 +31,8 @@ const MediaPanel = () => {
           </span>
         </a>
 
-        {/* Gmail */}
         <a
-          href="mailto:example@gmail.com"
+          href="mailto:limbukiran6969@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="box box3"
@@ -45,9 +42,8 @@ const MediaPanel = () => {
           </span>
         </a>
 
-        {/* GitHub */}
         <a
-          href="https://github.com/"
+          href="https://github.com/Kiran-Limbu"
           target="_blank"
           rel="noopener noreferrer"
           className="box box4"
@@ -166,11 +162,11 @@ const StyledWrapper = styled.div`
   }
 
   .box4 {
-   width: 20%;
-  height: 20%;
-  bottom: -20%;
-  left: -20%;
-  transition-delay: 0.6s;
+    width: 20%;
+    height: 20%;
+    bottom: -20%;
+    left: -20%;
+    transition-delay: 0.6s;
   }
 
   .box4:hover {

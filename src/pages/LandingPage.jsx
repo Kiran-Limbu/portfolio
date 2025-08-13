@@ -3,11 +3,12 @@ import Ballpit from "../components/Ballpit/ballpit";
 import { IoMdPerson } from "react-icons/io";
 import { GlobaleContex } from "../Contex/GlobaleContex";
 import AboutPanel from "../components/aboutpanel/AboutPanel";
+import LandingPageMedia from "../components/mediapanel/LandingPageMedia";
 
 const LandingPage = () => {
   const { setAboutPanel } = useContext(GlobaleContex);
   return (
-    <div className="w-full h-full bg-[#060010] relative opacity-95">
+    <div className="w-full h-full bg-[#060010] relative ">
       <div className="relative overflow-hidden">
         <Ballpit
           count={100}
@@ -19,9 +20,9 @@ const LandingPage = () => {
           size0={0.4}
         />
       </div>
-      <div className="absolute z-10 top-[26vh] left-[13vw] ">
+      <div className="absolute z-10 top-[26vh] left-[11vw] ">
         <div className="text-white w-full flex flex-col gap-5">
-          <div className="font-bold text-6xl pb-5 tracking-tight">
+          <div className="font-bold md:text-6xl text-4xl pb-5 tracking-tight">
             Kiran Limbu
           </div>
           <p className="custon-font font-semibold">MERN Stack Developer</p>
@@ -37,6 +38,9 @@ const LandingPage = () => {
       </div>
       <div className="About-Panel">
         <AboutPanel />
+      </div>
+      <div className="Media-Panel">
+        <LandingPageMedia />
       </div>
     </div>
   );

@@ -1,14 +1,13 @@
-import React from 'react'
 import LandingPage from './LandingPage'
-import DeatilsPage from './DeatilsPage'
 import AboutPanel from '../components/aboutpanel/AboutPanel'
+import ProjectDetailsPage from './ProjectDetailsPage'
 
 const MainPage = () => {
   return (
     <div>
       <LandingPage />
-      <DeatilsPage />
       <AboutPanel />
+      <ProjectDetailsPage />
     </div>
   )
 }

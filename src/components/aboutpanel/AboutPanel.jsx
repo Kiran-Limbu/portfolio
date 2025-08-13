@@ -15,7 +15,7 @@ const AboutPanel = () => {
             animate={{ y: "-1%" }}
             transition={{ ease: [0.16, 1, 0.3, 1], duration: 2 }}
             exit={{ y: "100%" }}
-            className="bg-zinc-800 fixed top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2  w-[90vw] my-5 rounded-md h-full"
+            className="bg-zinc-800 fixed top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2  w-[90vw] my-5 rounded-md h-full z-[999]"
           >
               <div className="flex items-end justify-end">
                 <button
