@@ -3,7 +3,7 @@ import Ballpit from "../components/Ballpit/ballpit";
 import { IoMdPerson } from "react-icons/io";
 import { GlobaleContex } from "../Contex/GlobaleContex";
 import AboutPanel from "../components/aboutpanel/AboutPanel";
-import LandingPageMedia from "../components/mediapanel/LandingPageMedia";
+import MediaPanel from "../components/mediapanel/MediaPanel";
 
 const LandingPage = () => {
   const { setAboutPanel } = useContext(GlobaleContex);
@@ -40,7 +40,7 @@ const LandingPage = () => {
         <AboutPanel />
       </div>
       <div className="Media-Panel">
-        <LandingPageMedia />
+        <MediaPanel />
       </div>
     </div>
   );

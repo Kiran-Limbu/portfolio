@@ -1,4 +1,3 @@
-import { data } from "react-router-dom";
 import bgImg from "../assets/images/laptoppng.jpg";
 import projectData from "../data/projectData"
 
