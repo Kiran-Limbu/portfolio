@@ -5,6 +5,7 @@ export const GlobaleContex = createContext();
 
 const GlobaleState = ({ children }) => {
     const [aboutPanel , setAboutPanel] = useState(false);
+    
   return (
     <GlobaleContex.Provider
     value={{

@@ -14,7 +14,7 @@ const ProjectDetailsPage = () => {
         key={data.id}
         className="cards w-full flex  md:flex-row flex-col items-center gap-5 text-zinc-800  border-b-[2px] border-zinc-800">
           <div className="img md:w-1/2 w-full relative">
-            <a href={data.projectLink}>
+            <a href={data.projectLink} target="_blank">
               <div className="hover:opacity-98">
               <img
                 className="absolute top-[17%] left-[21%] w-[58%] h-[58%] object-cover rounded-md"

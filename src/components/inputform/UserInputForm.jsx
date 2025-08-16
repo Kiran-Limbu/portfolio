@@ -1,28 +1,31 @@
 import { FiUser, FiMail, FiMessageSquare } from "react-icons/fi";
 import { HiPaperAirplane } from "react-icons/hi";
-import emailjs from '@emailjs/browser';
-import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useContext, useRef } from "react";
 
 const UserInputForm = () => {
-   const form = useRef();
-  
-    const sendEmail = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    const publicKey = "iljZqi6-oOeZx9-Cs";
-    const serviceId = "service_0lkbdwe";
-    const templateId = "template_l5xur9a";
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+
     emailjs
-      .sendForm(serviceId , templateId, form.current, {
+      .sendForm(serviceId, templateId, form.current, {
         publicKey: publicKey,
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("Message Send Sucessfully");
+          
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log(error.text);
+          
+        }
       );
   };
 
@@ -33,7 +36,7 @@ const UserInputForm = () => {
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
             Contact Me
           </h2>
-          <form ref={form} onSubmit={sendEmail} >
+          <form ref={form} onSubmit={sendEmail}>
             <div className="mb-4">
               <label
                 className="flex items-center text-gray-800 mb-1"
